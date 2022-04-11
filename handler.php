@@ -10,8 +10,8 @@
     
 
     # GLPI токены сгенерированные в настройках
-    $app_token = '';
-    $user_app_token ='';
+    $app_token = getenv("GLPI_APP_TOKEN");
+    $user_app_token = getenv("GLPI_USER_APP_TOKEN");
     
     # Тип источника запроса (значение из справочника, которое запомнили чуть раньше)
     $requesttypes_id = '5';
